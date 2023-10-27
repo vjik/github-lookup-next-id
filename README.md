@@ -1,4 +1,9 @@
+![](preview.gif)
+
 # GitHub Lookup Next ID Utility
+
+![GitHub release (with filter)](https://img.shields.io/github/v/release/vjik/github-lookup-next-id)
+![GitHub](https://img.shields.io/github/license/vjik/github-lookup-next-id)
 
 Bash script to lookup the next available ID of issue/PR in a GitHub repository.
 
