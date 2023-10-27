@@ -1,15 +1,18 @@
 # GitHub Lookup Next ID Utility
 
 <picture>
+  <source srcset="https://img.shields.io/github/v/release/vjik/github-lookup-next-id">
   <img alt="Release" src="https://img.shields.io/github/v/release/vjik/github-lookup-next-id">
 </picture>
 <picture>
+  <source srcset="https://img.shields.io/github/license/vjik/github-lookup-next-id">
   <img alt="License" src="https://img.shields.io/github/license/vjik/github-lookup-next-id">
 </picture>
 
 Bash script to lookup the next available ID of issue/PR in a GitHub repository.
 
 <picture>
+  <source srcset="preview.gif">
   <img src="preview.gif">
 </picture>
 
