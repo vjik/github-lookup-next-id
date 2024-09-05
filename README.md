@@ -12,7 +12,7 @@ Bash script to lookup the next available ID of issue/PR in a GitHub repository.
 Run the script in GIT repository directory with the following command, providing an optional starting ID:
 
 ```shell
-./github-issue-checker.sh [startId]
+./github-lookup-next-id [startId]
 ```
 
 ## License
