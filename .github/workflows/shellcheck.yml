@@ -1,0 +1,34 @@
+name: ShellCheck
+
+on:
+  pull_request:
+    paths:
+      - 'github-lookup-next-id'
+
+  push:
+    branches: ['master']
+    paths:
+      - 'github-lookup-next-id'
+
+jobs:
+  shellcheck:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v6
+
+      - name: Install ShellCheck from GitHub
+        run: |
+          SHELLCHECK_VERSION="stable"
+          curl -Lso shellcheck.tar.xz "https://github.com/koalaman/shellcheck/releases/download/${SHELLCHECK_VERSION}/shellcheck-${SHELLCHECK_VERSION}.linux.x86_64.tar.xz"
+          tar -xJf shellcheck.tar.xz
+
+      - name: Add ShellCheck to PATH
+        run: echo "$GITHUB_WORKSPACE/shellcheck-stable" >> $GITHUB_PATH
+
+      - name: Verify ShellCheck installation
+        run: shellcheck --version
+
+      - name: Run ShellCheck
+        run: shellcheck --severity=warning --format=gcc github-lookup-next-id

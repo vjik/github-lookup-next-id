@@ -21,7 +21,7 @@ fi
 
 # Extract the repository URL
 origin_url=$(git config --get remote.origin.url)
-if [ -z "$origin_url" ]; then
+if [ -z $origin_url ]; then
   echo "No remote origin URL found."
   exit 1
 fi
