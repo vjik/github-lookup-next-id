@@ -4,11 +4,13 @@ on:
   pull_request:
     paths:
       - 'github-lookup-next-id'
+      - '.github/workflows/shellcheck.yml'
 
   push:
     branches: ['master']
     paths:
       - 'github-lookup-next-id'
+      - '.github/workflows/shellcheck.yml'
 
 jobs:
   shellcheck:
@@ -31,4 +33,4 @@ jobs:
         run: shellcheck --version
 
       - name: Run ShellCheck
-        run: shellcheck --severity=warning --format=gcc github-lookup-next-id
+        run: shellcheck --format=gcc github-lookup-next-id
