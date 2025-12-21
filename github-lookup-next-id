@@ -1,4 +1,6 @@
 #!/bin/bash
+# SPDX-FileCopyrightText: 2021 Sergei Predvoditelev
+# SPDX-License-Identifier: BSD-3-Clause
 
 #
 # GitHub Lookup Next ID Utility 1.0
