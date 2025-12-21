@@ -5,5 +5,5 @@ path = [
     "**/*",
 ]
 precedence = "override"
-SPDX-FileCopyrightText = "2021-2025 Sergei Predvoditelev"
+SPDX-FileCopyrightText = "2021-2025 Sergei Predvoditelev <sergei@predvoditelev.ru>"
 SPDX-License-Identifier = "BSD-3-Clause"
