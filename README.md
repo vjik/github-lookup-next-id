@@ -18,4 +18,4 @@ Run the script in GIT repository directory with the following command, providing
 ## License
 
 The GitHub Lookup Next ID Utility is free software. It is released under the terms of the BSD License.
-Please see [license](./LICENSES/BSD-3-Clause.txt) for more information.
+Please see [license](./LICENSE.md) for more information.
